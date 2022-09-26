@@ -52,6 +52,16 @@ Start Jupyter-Lab from the command line in the active environment:
 jupyter-lab
 ```
 
+**The short way**
+
+```
+conda create -c conda-forge -n geo python=3 jupyterlab geopandas
+conda activate geo
+jupyter-lab
+```
+
+
+
 ## Create a New Conda Environment, condensed
 
 ```
