@@ -101,7 +101,7 @@ import geopandas as gpd
 ```
 
 
-**Workaround 2: Set the environment variable in your canda environment**
+**Workaround 2: Set the environment variable in your conda environment**
 
 On Windows use the Anaconda power shell and activate the conda environment you want to work with:
 
