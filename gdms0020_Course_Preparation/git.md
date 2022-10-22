@@ -13,14 +13,14 @@ For now we recommend the graphical user interface [**GitHub Desktop**](https://d
 
 ## Clone the Repository
 
-Command line: `git clone https://github.com/rolfbecker/EE_3.07_Geodata_WS2021.git`
+Command line: `git clone https://github.com/rolfbecker/EE_1.08_2_EEng_LAB_WS2022.git`
 
 With **GitHub Desktop**:
 
 1. Open GitHub desktop
 1. Go to _File -> Clone repository ..._
 1. Change to tab _URL_
-1. Copy the URL `https://github.com/rolfbecker/EE_3.07_Geodata_WS2021.git` into the URL field
+1. Copy the URL `https://github.com/rolfbecker/EE_1.08_2_EEng_LAB_WS2022.git` into the URL field
 1. Choose your local path (directory). In this directory a new directory with the repo name will be created.
 1. Press button _clone_.
 
@@ -30,7 +30,7 @@ With **GitHub Desktop**:
 ![Git Workflow 1](https://i.stack.imgur.com/vpVBd.png "Git Workflow")
 
 ### View 2
-![Git Workflow 2] (https://kevintshoemaker.github.io/StatsChats/GIT2.png "Git Workflow")
+![Git Workflow 2](https://kevintshoemaker.github.io/StatsChats/GIT2.png "Git Workflow")
 
 
 ## Git Help
@@ -42,4 +42,4 @@ With **GitHub Desktop**:
 
 * [Introduction to Git - Core Concepts](https://www.youtube.com/watch?v=uR6G2v_WsRA)
 * [Introduction to Git - Branching and Merging](https://www.youtube.com/watch?v=FyAAIHHClqI) 
-* [Introduction to Git - Remotes] (https://www.youtube.com/watch?v=Gg4bLk8cGNo)
+* [Introduction to Git - Remotes](https://www.youtube.com/watch?v=Gg4bLk8cGNo)
