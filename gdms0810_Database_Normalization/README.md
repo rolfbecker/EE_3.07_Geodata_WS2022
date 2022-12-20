@@ -9,5 +9,6 @@ The music database example of the presentation [DB_NF_normalization_2021-12-13_V
 You can create the database on your PostgreSQL server (probably your localhost, i.e. "your computer") by using the CLI `psql`:
 
 ```
-psql -U postgres -d postgres -h localhost -f 070_create_and_fill_music_db_with_music_user_V001.sql
+psql -U postgres -d postgres -h localhost -p 5432 -f 070_create_and_fill_music_db_with_music_user_V001.sql
 ```
+
