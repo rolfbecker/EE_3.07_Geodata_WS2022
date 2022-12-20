@@ -1,4 +1,4 @@
-<!--Stand: 27.05.2022-->
+<!--Stand: 05.10.2022-->
 <!DOCTYPE connections>
 <qgsWFSConnections version="1.0">
     <wfs password="" referer="" username="" url="https://www.wfs.nrw.de/geobasis/wfs_nw_atkis-basis-dlm_aaa-modell-basiert" name="NW ATKIS Basis-DLM"/>
@@ -13,6 +13,7 @@
 	<wfs password="" referer="" username="" url="https://www.wfs.nrw.de/geobasis/wfs_nw_alkis_nas-konform" name="NW ALKIS NAS-konform"/>
 	<wfs password="" referer="" username="" url="https://www.wfs.nrw.de/geobasis/wfs_nw_hl_hp" name="NW HL HP"/>
 	<wfs password="" referer="" username="" url="https://www.wfs.nrw.de/geobasis/wfs_nw_hl_hp_aaa-modell-basiert" name="NW HL HP AAA-Modell-basiert"/>
+	<wfs password="" referer="" username="" url="https://www.wfs.nrw.de/geobasis/wfs_nw_landbedeckung" name="NW Landbedeckung"/>
 	<wfs password="" referer="" username="" url="https://www.wfs.nrw.de/geobasis/wfs_nw_inspire-adressen_gebref" name="INSPIRE-WFS NW Adressen Gebäudereferenzen"/>
 	<wfs password="" referer="" username="" url="https://www.wfs.nrw.de/geobasis/wfs_nw_inspire-boden_alkis" name="INSPIRE-WFS NW Boden ALKIS"/>
 	<wfs password="" referer="" username="" url="https://www.wfs.nrw.de/geobasis/wfs_nw_inspire-bodenbedeckungsvektor_alkis" name="INSPIRE-WFS NW Bodenbedeckungsvektor ALKIS "/>

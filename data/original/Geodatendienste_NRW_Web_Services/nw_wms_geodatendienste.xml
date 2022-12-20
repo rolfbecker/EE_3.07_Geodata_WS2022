@@ -1,4 +1,4 @@
-<!--Stand: 13.07.2022-->
+<!--Stand: 05.10.2022-->
 <!DOCTYPE connections>
 <qgsWMSConnections version="1.0">
     <wms ignoreGetMapURI="false" smoothPixmapTransform="false" dpiMode="7" password="" ignoreGetFeatureInfoURI="false" referer="" username="" url="https://www.wms.nrw.de/geobasis/wms_nw_dgk5" invertAxisOrientation="false" ignoreAxisOrientation="false" name="NW Deutsche Grundkarte 1:5.000 (DGK5)"/>
@@ -46,6 +46,8 @@
 	<wms ignoreGetMapURI="false" smoothPixmapTransform="false" dpiMode="7" password="" ignoreGetFeatureInfoURI="false" referer="" username="" url="https://www.wms.nrw.de/geobasis/wms_nw_tdom" invertAxisOrientation="false" ignoreAxisOrientation="false" name="NW Temporales Digitales Oberflächenmodell 50 (TDOM) [WMS]"/>
 	<wms ignoreGetMapURI="false" smoothPixmapTransform="false" dpiMode="7" password="" ignoreGetFeatureInfoURI="false" referer="" username="" url="https://www.wms.nrw.de/geobasis/wms_nw_ndom" invertAxisOrientation="false" ignoreAxisOrientation="false" name="NW Normalisiertes Digitales Oberflächenmodell 50 (NDOM) [WMS]"/>
 	<wms ignoreGetMapURI="false" smoothPixmapTransform="false" dpiMode="7" password="" ignoreGetFeatureInfoURI="false" referer="" username="" url="https://www.wms.nrw.de/geobasis/wms_nw_dymos_s2" invertAxisOrientation="false" ignoreAxisOrientation="false" name="NW Dynamisches Mosaik aus Sentinel-2 Daten [WMS]"/>
+	<wms ignoreGetMapURI="false" smoothPixmapTransform="false" dpiMode="7" password="" ignoreGetFeatureInfoURI="false" referer="" username="" url="https://www.wms.nrw.de/geobasis/wms_nw_landbedeckung" invertAxisOrientation="false" ignoreAxisOrientation="false" name="NW Landbedeckung [WMS]"/>
+	<wms ignoreGetMapURI="false" smoothPixmapTransform="false" dpiMode="7" password="" ignoreGetFeatureInfoURI="false" referer="" username="" url="https://www.wmts.nrw.de/geobasis/wmts_nw_landbedeckung" invertAxisOrientation="false" ignoreAxisOrientation="false" name="NW Landbedeckung [WMTS]"/>
 	<wms ignoreGetMapURI="false" smoothPixmapTransform="false" dpiMode="7" password="" ignoreGetFeatureInfoURI="false" referer="" username="" url="https://www.wms.nrw.de/geobasis/wms_nw_inspire-adressen_gebref" invertAxisOrientation="false" ignoreAxisOrientation="false" name="INSPIRE-WMS NW Adressen Gebäudereferenzen [WMS]"/>
 	<wms ignoreGetMapURI="false" smoothPixmapTransform="false" dpiMode="7" password="" ignoreGetFeatureInfoURI="false" referer="" username="" url="https://www.wms.nrw.de/geobasis/wms_nw_inspire-boden_alkis" invertAxisOrientation="false" ignoreAxisOrientation="false" name="INSPIRE-WMS NW Boden ALKIS [WMS]"/>
 	<wms ignoreGetMapURI="false" smoothPixmapTransform="false" dpiMode="7" password="" ignoreGetFeatureInfoURI="false" referer="" username="" url="https://www.wms.nrw.de/geobasis/wms_nw_inspire-bodenbedeckungsvektor_alkis" invertAxisOrientation="false" ignoreAxisOrientation="false" name="INSPIRE-WMS NW Bodenbedeckungsvektor ALKIS [WMS]"/>
