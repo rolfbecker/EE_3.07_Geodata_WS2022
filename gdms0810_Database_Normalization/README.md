@@ -4,3 +4,4 @@ My presentation for this topic is not open, yet. Students of HSRW can download i
 
 In the presentation the database for the fictive "For Ladies" sales company is discussed. The spreadsheet "For_Ladies_DB_Normalization_V001.xlsx" in the repo shows the decomposition (normalization) of the initial relation. 
  
+The music database example of the presentation can be created by the sql script `070...` under the folder sql_scripts.
