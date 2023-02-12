@@ -25,7 +25,7 @@ You have to produce a similar plot but with several stripes in one diagram. Each
 **Sub-Task 1.1:** <br>
 Select the stations which are (1) in NRW, (2) still active and (3) started before 1950. It should be **12 stations.** Use **Pandas** to read the station description file https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/annual/kl/historical/KL_Jahreswerte_Beschreibung_Stationen.txt
 
-Have a look at the available Jupyter notebooks in the geodata git repository. Especially the following could be a good starting point: ./gdms0180_DWD_NRW_Annual_Temp_vs_Altitude/gnb0181_DWD_NRW_Annual_Temp_vs_Altitude_V001.ipynb
+Have a look at the available Jupyter notebooks in the geodata git repository. Especially the following could be a good starting point: [./gdms0180_DWD_NRW_Annual_Temp_vs_Altitude/gnb0181_DWD_NRW_Annual_Temp_vs_Altitude_V001.ipynb](./gdms0180_DWD_NRW_Annual_Temp_vs_Altitude/gnb0181_DWD_NRW_Annual_Temp_vs_Altitude_V001.ipynb)
 
 Modify it according to your needs. 
 
