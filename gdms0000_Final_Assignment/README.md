@@ -14,7 +14,7 @@
 13. You have to **produce a presentation** (i.e. Powerpoint or similar) and upload it to your git repo. Describe the **individual tasks**. See the **pptx-template** provided in this assignment repo. The pptx template includes a **self-assessment**. In case you work in groups each member has to provide a self-assessment. 
 14. You have to **produce one video per group on your presentation** and add it to the zip you upload. **All students must take part in their group's video presentation**. The video is to present the slides with your results. **Do not explain every detail** in the video, e.g. do not explain how to execute your code line by line, etc. Just present each task, your methods, and your results. Refer (name or link) to your code files as well as QGIS projects in your slides such we can reproduce your work if we want.
 
-## 1. Warming Stripes
+## 1. Warming Stripes (20 Points)
 
 The British meteorologist Ed Hawkins from the National Centre for Atmospheric Science, University of Reading, came up with the idea to show global warming in terms of colored stripes indicating temperatures above or below a reference temperature with red or blue, respectively. Interactive examples can be studied on the official website [showyourstripes](https://showyourstripes.info/s/europe/germany/nordrheinwestfalen). The development of NRW's mean annual temperature looks like:
 
@@ -46,7 +46,7 @@ Create a similar plot for the 12 selected stations including annual temperature 
 
 
 
-## 2. Digitization: Burial Mounds in Uedemer Hochwald
+## 2. Digitization: Burial Mounds in Uedemer Hochwald (20 Points)
 
 <img src="images/Burial_Mounds.png" alt="Burial Mounds Map" width="600" border="10" /><br>
 *Fig.: Burial mounds in Uedemer Hochwald.*
@@ -65,7 +65,7 @@ Use the DTM (not the hillshapde model!) and measure the typical mound heights re
 **Task 2.4:** <br> 
 Study the hillshade model in direction East-North-East of the burial mounds area and search for weakly visible reectangular structures which are not paths. What do you observe? Do you have a guess about the origin of these patterns? Choose at least one of the structures, digitize it with a polygon and save it as a geopackage.
 
-## 3. OpenHygrisC Nitrate Data: Create a Movie with the QGIS Temporal Controller Connected to PostgreSQL / PostGIS
+## 3. OpenHygrisC Nitrate Data: Create a Movie with the QGIS Temporal Controller Connected to PostgreSQL / PostGIS (20 Points)
 
 **Spatio-Temporal Data Anmination using PostGIS together with QGIS Temporal Controller**
 
@@ -73,9 +73,11 @@ In the last lectures we downloaded and engineered the OpenHygrisC groundwater qu
 
 The activity of producing movies of groundwater chemistry data was not fully accomplished during the lecture phase but I continued and improved the training material in the scope of the funded project OpenHyPE. You can find my latest software versions here: 
 
-## 4. FREE EXERCISE
+## 4. FREE EXERCISE (20 Points)
 
 Do something exiting!
+
+## 5. Produce a Video and Explain your Methods and Achievements. (20 Points)
 
 
 
