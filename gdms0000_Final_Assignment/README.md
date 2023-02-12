@@ -67,39 +67,11 @@ Study the hillshade model in direction East-North-East of the burial mounds area
 
 ## 3. OpenHygrisC Nitrate Data: Create a Movie with the QGIS Temporal Controller Connected to PostgreSQL / PostGIS
 
-**Spatio-Temporal Precipitation Anmination using PostGIS together with QGIS Temporal Controller**
+**Spatio-Temporal Data Anmination using PostGIS together with QGIS Temporal Controller**
 
-Produce a rainfall video over a **7-day period** in 2021 that covers the heavy rains that led to the catastrophic flooding. The animation should cover all DWD stations in NRW with hourly precipitation. Create a point layer in QGIS showing the stations in NRW with time dependent precipitation rate data (mm per hour) in the attribute table. This layer has to come from a PostGIS **view**, which joins the **two tables** with 1) static station info including coordinates and 2) time dependent precipitation rates. Use the QGIS Temporal Controller to produce an animation. 
+In the last lectures we downloaded and engineered the OpenHygrisC groundwater quality data. We loaded the station info as well as the measurement data into the geodatabase. Have a look at the two last lecture videos starting with `Dr. B.: Geodata - 2023-01-20`. 
 
-**Sub-Task 2.1: Create and fill your own geodatabase** <br> 
-Create and fill your own geodatabase with DWD precipitation station data as well as hourly precipitation time series. Follow the **Jupyter Notebook tutorial** of [geo0930_PostGIS_Insert_DWD_Stations_and_TS](https://github.com/rolfbecker/opengeo/tree/main/geo0930_PostGIS_Insert_DWD_Stations_and_TS) (main notebook geo0930_PostGIS_DWD_Stations_and_TS_V002.ipynb) together with the respective **YouTube tutorial** [here](https://youtu.be/wvIkhZNfz6s)
-
-(Remark: The general [opengeo repository](https://github.com/rolfbecker/opengeo) is under construction. I am using it to reorganize my teaching material independent from specific courses. It will be filled step by step.)
-
-The last part of the video tutorial (from March 2021) is meanwhile outdated, because it explains how to produce an animation based on the QGIS TimaManager plugin. The **TimeManager plugin is deprecated!** The new way is to use the **QGIS Temporal Controller**, which is integrated in recent QGIS versions. I have no video on that, yet.
-
-The following video shows an example of a precipitation animation generated with the QGIS TimeManager. It is meant to give you an idea about the activity.
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=fdCQBbzyD84
-" target="_blank"><img src="http://img.youtube.com/vi/fdCQBbzyD84/0.jpg" 
-alt="QGIS Time Manager (deprecated): DWD Precipitation Data for NRW" width="300" border="10" /></a>
-
-_Fig.: YouTube video showing the temporal evolution of DWD precipitation data in NRW for May 2019._
-
-**Sub-Task 2.2: Add the PostGIS view v_stations_prec as a layer to your QGIS project**
-After having finalized the tutorial above the geodatabase `geo` contains the two tables `dwd.prec`and `dwd.stations` as well as the view `v_stations_prec`. The view joins the two tables. Add the geo-enabled view as a PostGIS layer to your project.
-
-**Sub-Task 2.3: Use the QGIS Temporal Controller to produce an animation** <br> 
-Follow the tutorial https://www.qgistutorials.com/en/docs/3/animating_time_series.html on QGIS Temporal Controller to produce an animation.
-
-The time period of data and animation, respectively, has to cover **7 days** with hourly resolution. You have to change the creation of the view in the Jupyter Notebook to extend the time span. The catastrophic rain event of 2021 (less than two days) should be roughly in the middle of the view's selected time interval.     
-
-Import the NRW administrative boundary (vector layer) as a Web Feature Service (WFS). We discussed in class how to import and use the web services (WMS, WFS, WCS) provided by NRW (as part of opengeodata.nrw.de). Import the topographic map from the NRW WMS collection as the background map. 
-
-Use the menu `view -> decorations` to add title, legend, scale, north arrow, time stamp, etc.
-
-Save/export the created images and make a video from it. Add it to your gitlab repo.
-
+The activity of producing movies of groundwater chemistry data was not fully accomplished during the lecture phase but I continued and improved the training material in the scope of the funded project OpenHyPE. You can find my latest software versions here: 
 
 ## 4. FREE EXERCISE
 
