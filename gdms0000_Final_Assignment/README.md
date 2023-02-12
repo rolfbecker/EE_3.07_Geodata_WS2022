@@ -78,7 +78,8 @@ I presented the Nitrate assessment problem in NRW as well as a technical demonst
 Another  source of information is the training material by the master student Sina Navid on the [EOLab Wiki](https://wiki.eolab.de/doku.php?id=eolab:openhype:start). The information a a bit outdated but still quite useful.
 
 **TASK:**
-Get the OpenHypE system running. It consists of OpenHygrisC data (station locations, masurement data, catalog of substances) stored in PostgreSQL/PostGIS with QGIS utilizing a live link to the geodatabase. Start with my OpenHyPE git repo. Read the code and execute it. We have not talked about the database concept of views. They are stored 
+Get the OpenHypE system running. It consists of OpenHygrisC data (station locations, masurement data, catalog of substances) stored in PostgreSQL/PostGIS with QGIS utilizing a live link to the geodatabase. Start with my OpenHyPE git repo. Read the code and execute it. We have not talked about the database concept of views. They are stored queries (select statements) generally joining and projecting relations. You find some `create view` statements in my Jupyter Notebooks. Furthermore I created several indexes. They are used to improve the performance of data retrieval. They are part of database optimization.
+
 Produce a mpeg (or similar) video with the QGIS Temporal Controller. In the video above I move the time slider manually forth and back. Automize it and produce a video of the Nitrate concentration from the earliest available Nitrate measurement (early 1960's) up to the latest measurement.
 
 
