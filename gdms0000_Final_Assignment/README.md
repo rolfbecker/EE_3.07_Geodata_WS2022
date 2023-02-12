@@ -65,7 +65,7 @@ Use the DTM (not the hillshapde model!) and measure the typical mound heights re
 **Task 2.4:** <br> 
 Study the hillshade model in direction East-North-East of the burial mounds area and search for weakly visible reectangular structures which are not paths. What do you observe? Do you have a guess about the origin of these patterns? Choose at least one of the structures, digitize it with a polygon and save it as a geopackage.
 
-## 3. OpenHygrisC Nitrate Data: Create a Movie with the QGIS Temporal Controller
+## 3. OpenHygrisC Nitrate Data: Create a Movie with the QGIS Temporal Controller Connected to PostgreSQL / PostGIS
 
 **Spatio-Temporal Precipitation Anmination using PostGIS together with QGIS Temporal Controller**
 
