@@ -37,37 +37,12 @@ Extend your Jupyter notebook to **automatically download** (using ftplib, wget, 
 https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/annual/kl/historical/
 
 **Sub-Task 1.4:** <br>
-Use the dataframe with the temperature time series merged columnwise together with seaborn to plot the waring stripes. 
+Use the dataframe with the temperature time series merged columnwise together with seaborn to plot the waring stripes. The diagram with five stations and not recent data (2022 missing) looks like:
+
 <img src="images/NRW_Annual_Temp_Diff_Stripes_02.png" alt="Warming Stripes NRW" width="600" border="10" /><br>
 
-
-## 1. Correlation of Mean Annual Temperature with Altitude in Bavaria
-
-In the troposphere the mean annual temperature decreases approximately linearly with height. Verify this hypothesis by means of data in Bavaria. This federal state reveals the broadest range of topographic heights, from 100m to more than 2800m above Normal-Null (NN). 
-
-You can start from the Jupyter Notebook `gnb0181_DWD_NRW_Annual_Temp_vs_Altitude_V001.ipynb`in the WS2021 geodata repo. 
-
-**Sub-Task 1.1:** <br>
-Plot the annual mean temperatures of **years 2017, 2018, and 2019** versus altitude for the DWD stations in Bavaria in one diagram (xy scatter plot). Use different colors for the different years. Use the **altitudes from the station description file** `KL_Jahreswerte_Beschreibung_Stationen.txt` for the data set `/annual/kl/historical/`.
-
-**Sub-Task 1.2:** <br>
-The DTM of Bavaria with 50m horizontal resolution in EPSG:25852 as GeoTiff (500 MB!) can be downloaded from here: \\
-http://www.geodaten.bayern.de/opendata/DGM50_UTM32/dgm50_epsg25832.tif
-
-Create a decent map (including title, annotations, scales, legends, north arrow, graticule, CRS, data source references, etc.) with all DWD temperature stations in Bavaria which were active in the years of concern (2017, 2018, 2019). There are several ways to get a station layrer in QGIS. You can e.g. use Jupyter to create a CSV file from the DWD station description, import it to QGIS and limit it to Bavaria. Or you can create a geopackage with geopandas. Or you find other methods. Label the stations with their station id (number). 
-
-Use the DTM as a map layer in the background. Try to find the digital administrative boundaries of Bavaria and overlay the disctrict boundaries as well as the boundary of the federal state. Crop the DTM to the boundary of Bavaria precisely. Use an appropriate color map to display the DTM as in topographic maps. Search the Internet for how to select and load suitable color maps in QGIS. Probably you still have to apply fine adjustments in the mapping of the colors to terrain elevation: Low lands green, higher elevations brown, the Alpine peaks white, and finally bluish for low land rivers, if possible. 
-
-**Sub-Task 1.3:** <br>
-Sample the DTM at the locations of the DWD stations.
-
-Use the QGIS Processing Toolbox to do so. Use the dialog *Sample Raster Values* from the *Raster Analysis Toolbox*.
-Selecting the menu item *Processing -> Toolbox* toggles the visibility of the Toolbox pane. From this select *Raster Analysis*.
-
-Add another field to the DWD stations attribute table with the altitudes sampled from the DTM. Compare the original altitudes from the DWD station file to the heights derived from the DTM. Where and why are the strongest deviations? 
-
-**Sub-Task 1.4:** <br>
-Plot the mean annual temperatures versus the DTM heights for the DWD stations in Bavaria. Perform a **linear regression with numpy** to the data (not Excel!!!). How does the temperature vary with height according to your regression model, i.e. what is the temperature gradient (the slope of the regression line) in units K/m or °C/m?
+Create a similar plot for the 12 selected stations including annual temperature data of 2022. Copy the relevant code from notebook 
+[gdms0155_DWD_NRW_5_Warming_Stripes/gdms155_DWD_NRW_5_Warming_Stripes.ipynb](../gdms0155_DWD_NRW_5_Warming_Stripes/gdms155_DWD_NRW_5_Warming_Stripes.ipynb). 
 
 
 ## 2. DWD Precipitation Measurements in North Rhine-Westphalia (NRW): Create a Movie with QGIS Temporal Controller
