@@ -1,4 +1,4 @@
-# EE_3.07 Geodata Management Systems -<br> Final Assignment WS2021/22
+# EE_3.07 Geodata Management Systems - Final Assignment WS2021/22
 
 ## 0. General Remarks
 
@@ -6,16 +6,12 @@
 1. You can withdraw from exam registration until **2022-02-28**.
 1. You do not have to write a formal report but you have to sketch the steps you have taken to do the analyses. The code you are uploading as well as additional documentation has to **enable us to redo your work completely!** You must tell us which data you use and where to download it.
 1. You can work in **groups of 1 - 3 students**. You have do the **group assignment** in our Moodle course: https://moodle.hochschule-rhein-waal.de/course/view.php?id=14379#section-6 <br> Assign to a group even if you **work alone**.
-1. You have to **submit your work in a gitlab repository!** It is enough if **one member of the group uploads the group work**. <br>Create your own repo on the **University Gitlab server: https://git.hsrw.eu/**.
-1. **USE THE FOLLWING REPO NAME:** `GeoData_WS2021_II_Final_<Group ID>`, (e.g. GeoData_WS2021_II_Final_Group_Z). <br>**Make it private but invite me to read it!**
+1. You have to **submit your work in a gitlab repository!** It is enough if **one member of the group uploads the group work**. Create your own repo on the **University Gitlab server: https://git.hsrw.eu/**. <br>**USE THE FOLLWING REPO NAME:** `GeoData_WS2021_II_Final_<Group ID>`, (e.g. GeoData_WS2021_II_Final_Group_Z). **Make it private but invite me to read it!**
 1. Again: Make your **repo private** so others do not simply copy your work. **Grant read access to me** on your repository. **Stick to the naming convention!** Some students did not understand it the last semesters. This caused a lot of trouble. 
-1. **I will clone your Gitlab repo at the end of deadline.** That will be the main basis of my assessment. **Stick to the naming convention and allow me to read your private repo!** If I cannot find your repo because of wrong naming or I cannot read it because you did not invite me for reading I will not be able to grade your work and **you will fail**. 
+1. I will clone your Gitlab repo at the end of deadline. That will be the main basis of my assessment. **Stick to the naming convention and allow me to read your private repo!** If I cannot find your repo because of wrong naming or I cannot read it because you did not invite me for reading I will not be able to grade your work and **you will fail**. 
 1. You have to use the GitLab repository to document your work. THIS IS MANDATORY! Use a `REAMDE.md` file (and more .md-files, if needed) to describe your work. Upload your Python/Jupyter scripts as well as QGIS projects but **do not add very large datasets** (e.g. no satellite images, excessive DTM tiles in XYZ format, etc.) to the repository. In case you use very large datasets **share the link to the data** in your documentation and/or your code. In case you you produce very large datasets tell us how and **enable us to reproduce your results** instead of flooding your repo with big data.
 1. You have to **produce a presentation** (i.e. Powerpoint or similar) and upload it to your git repo. Describe the **four individual tasks**. See the pptx-template provided in this assignment repo. This includes a **self-assessment**. In case you work in groups each member has to provide a self-assessment. 
-1. You have to **produce one video per group on your presentation** and upload it to your git repo. **All students must take part in their group's video presentation**. 
-1. The video is to present the slides with your results. **Do not explain every detail** in the video, e.g. do not expalin how to execute your code line by line, etc. Just present each task, your methods, and your results. Refer (name or link) to your code files as well as QGIS projects in your slides such we can reproduce your work if we want.
-1. The video should **not exceed 20 minutes, i.e. 5 minutes per task!**
-1. **Do not include your self-assessment in the video!** If your video is great and you agree I would like to make it public after grading as a reference for future students.
+1. You have to **produce one video per group on your presentation** and upload it to your git repo. **All students must take part in their group's video presentation**. The video is to present the slides with your results. **Do not explain every detail** in the video, e.g. do not expalin how to execute your code line by line, etc. Just present each task, your methods, and your results. Refer (name or link) to your code files as well as QGIS projects in your slides such we can reproduce your work if we want.
 
 
 ## 1. Correlation of Mean Annual Temperature with Altitude in Bavaria
@@ -28,7 +24,7 @@ You can start from the Jupyter Notebook `gnb0181_DWD_NRW_Annual_Temp_vs_Altitude
 Plot the annual mean temperatures of **years 2017, 2018, and 2019** versus altitude for the DWD stations in Bavaria in one diagram (xy scatter plot). Use different colors for the different years. Use the **altitudes from the station description file** `KL_Jahreswerte_Beschreibung_Stationen.txt` for the data set `/annual/kl/historical/`.
 
 **Sub-Task 1.2:** <br>
-The DTM of Bavaria with 50m horizontal resolution in EPSG:25852 as GeoTiff (500 MB!) can be downloaded from here: <br>
+The DTM of Bavaria with 50m horizontal resolution in EPSG:25852 as GeoTiff (500 MB!) can be downloaded from here: \\
 http://www.geodaten.bayern.de/opendata/DGM50_UTM32/dgm50_epsg25832.tif
 
 Create a decent map (including title, annotations, scales, legends, north arrow, graticule, CRS, data source references, etc.) with all DWD temperature stations in Bavaria which were active in the years of concern (2017, 2018, 2019). There are several ways to get a station layrer in QGIS. You can e.g. use Jupyter to create a CSV file from the DWD station description, import it to QGIS and limit it to Bavaria. Or you can create a geopackage with geopandas. Or you find other methods. Label the stations with their station id (number). 
@@ -89,16 +85,16 @@ Save/export the created images and make a video from it. Add it to your gitlab r
 
 South west of the village Marienbaum (belongs to Xanten municipality) is the forest "Uedemer Hochwald" in which many burial mounds (German: Hügelgrab (sg.), Hügelgräber (pl.)) from our ancestors of the Hallstatt period (a Celtic culture between 850 and 450 BCE) can be found. The above picture shows a map section with some of the burial mounds indicated as grey dots. 
  
-**Sub-Task 3.1:** <br> 
+**Task 3.1:** <br> 
 Georeference the picture of the map above. Start with the QGIS project `gdms0000_Burial_Mounds_Uedem_V001.qgz` in the assignment folder. Georeference the picture of the map by means of the QGIS Georeferencer together with the layer **DTK10**, the NRW topographic map in 1:10000, already imported from the NRW WMS server and added in the QGIS project. Use crossing forest trails, crossroads, road junctions and other features you can identify on DTK10 as land marks (aka ground control points, GCP) with known coordinates (can be read from the QGIS map canvas). Use EPSG:25832. Add the georeferenced map to the QGIS project.
  
-**Sub-Task 3.2:** <br> 
+**Task 3.2:** <br> 
 Create a hillshade model from the DTM layer. Plot your georeferenced map partly transparent on top of the hillshade model. Compare. What do you observe? How good is the georeferenced map section showing the burial mounds? 
 
-**Sub-Task 3.3:** <br> 
+**Task 3.3:** <br> 
 Use the DTM (not the hillshapde model!) and measure the typical mound heights relative to their direct environment/neighborhood (not the absolute height above sealevel!). What is their typical elvation in the landscape?
 
-**Sub-Task 3.4:** <br> 
+**Task 3.4:** <br> 
 Study the hillshade model in direction East-North-East of the burial mounds area and search for weakly visible reectangular structures which are not paths. What do you observe? Do you have a guess about the origin of these patterns? Choose at least one of the structures, digitize it with a polygon and save it as a geopackage.
 
 ## 4. FREE EXERCISE
