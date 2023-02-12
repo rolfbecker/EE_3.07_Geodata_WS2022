@@ -1,4 +1,4 @@
-# EE_3.07 Geodata Management Systems WS2022/23 <br> - Final Assignment
+# EE_3.07 Geodata Management Systems WS2022/23 - <br> Final Assignment
 
 ## 0. General Remarks
 
@@ -13,6 +13,31 @@
 11. In case you **you produce very large datasets** tell us how and **enable us to reproduce your results** instead of flooding your repo with big data.
 13. You have to **produce a presentation** (i.e. Powerpoint or similar) and upload it to your git repo. Describe the **individual tasks**. See the **pptx-template** provided in this assignment repo. The pptx template includes a **self-assessment**. In case you work in groups each member has to provide a self-assessment. 
 14. You have to **produce one video per group on your presentation** and add it to the zip you upload. **All students must take part in their group's video presentation**. The video is to present the slides with your results. **Do not explain every detail** in the video, e.g. do not explain how to execute your code line by line, etc. Just present each task, your methods, and your results. Refer (name or link) to your code files as well as QGIS projects in your slides such we can reproduce your work if we want.
+
+## 1. Warming Stripes
+
+The British meteorologist Ed Hawkins from the National Centre for Atmospheric Science, University of Reading, came up with the idea to show global warming in terms of colored stripes indicating temperatures above or below a reference temperature with red or blue, respectively. Interactive examples can be studied on the official website [showyourstripes](https://showyourstripes.info/s/europe/germany/nordrheinwestfalen). The development of NRW's mean annual temperature looks like:
+
+<img src="images/EUROPE-Germany-Nordrhein_Westfalen-1881-2021-DW-withlabels.png" alt="Warming Stripes NRW" width="600" border="10" /><br>
+
+You have to produce a similar plot but with several stripes in one diagram. Each stripe would represent the development of annual temperatures at a selection of stations. 
+
+**Sub-Task 1.1:** <br>
+Select the stations which are (1) in NRW, (2) still active and (3) started before 1950. It should be **12 stations.** Use **Pandas** to read the station description file https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/annual/kl/historical/KL_Jahreswerte_Beschreibung_Stationen.txt
+
+Have a look at the available Jupyter notebooks in the geodata git repository. Especially the following could be a good starting point: ./gdms0180_DWD_NRW_Annual_Temp_vs_Altitude/gnb0181_DWD_NRW_Annual_Temp_vs_Altitude_V001.ipynb
+
+Modify it according to your needs. 
+
+**Sub-Task 1.2:** <br>
+Use geopandas in your Jupyter notebook to create a geopackage layer with exactly the stations matching the above criteria. Load this into QGIS and use the NRW WMS service with the topographic map collection as a background map. Create a nicely designed and completely annotated map using EPSG:25832. Use the station IDs together with the station names as labels.  
+
+**Sub-Task 1.3:** <br>
+Extend your Jupyter notebook to **automatically download** (using ftplib, wget, or similar) the annual temperature data from the KL data collection, i.e. which automatically downloads the data according to the selected station IDs in the station info dataframe from here: 
+https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/annual/kl/historical/
+
+**Sub-Task 1.4:** <br>
+Extract the annual temperature time series from the downloaded zip files. You will find useful code in the available notebooks. 
 
 
 ## 1. Correlation of Mean Annual Temperature with Altitude in Bavaria
