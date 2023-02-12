@@ -37,7 +37,8 @@ Extend your Jupyter notebook to **automatically download** (using ftplib, wget, 
 https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/annual/kl/historical/
 
 **Sub-Task 1.4:** <br>
-Extract the annual temperature time series from the downloaded zip files. You will find useful code in the available notebooks. 
+Use the dataframe with the temperature time series merged columnwise together with seaborn to plot the waring stripes. 
+<img src="images/NRW_Annual_Temp_Diff_Stripes_02.png" alt="Warming Stripes NRW" width="600" border="10" /><br>
 
 
 ## 1. Correlation of Mean Annual Temperature with Altitude in Bavaria
