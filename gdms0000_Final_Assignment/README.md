@@ -41,7 +41,7 @@ Use the dataframe with the temperature time series merged columnwise together wi
 
 <img src="images/NRW_Annual_Temp_Diff_Stripes_02.png" alt="Warming Stripes NRW" width="600" border="10" /><br>
 
-Create a similar plot for the 12 selected stations including annual temperature data of 2022. Copy the relevant code from notebook 
+Create a similar plot but for the 12 selected stations including the annual temperature data of 2022. Let the time series run from 1950 to 2022. Copy the relevant code from notebook 
 [gdms0155_DWD_NRW_5_Warming_Stripes/gdms155_DWD_NRW_5_Warming_Stripes.ipynb](../gdms0155_DWD_NRW_5_Warming_Stripes/gdms155_DWD_NRW_5_Warming_Stripes.ipynb). 
 
 
@@ -71,7 +71,18 @@ Study the hillshade model in direction East-North-East of the burial mounds area
 
 In the last lectures we downloaded and engineered the OpenHygrisC groundwater quality data. We loaded the station info as well as the measurement data into the geodatabase. Have a look at the two last lecture videos starting with `Dr. B.: Geodata - 2023-01-20`. 
 
-The activity of producing movies of groundwater chemistry data was not fully accomplished during the lecture phase but I continued and improved the training material in the scope of the funded project OpenHyPE. You can find my latest software versions here: 
+The activity of producing movies of groundwater chemistry data was not fully accomplished during the lecture phase but I continued and improved the training material in the scope of the funded project OpenHyPE. You can find my latest software versions [**here**](https://github.com/rolfbecker/OpenHyPE).
+
+I presented the Nitrate assessment problem in NRW as well as a technical demonstration at our LatiNet Environmental Conference in the Green FabLab on 2023-02-06. You find the preliminary video (with suboptimal audio) on [**YouTube**](https://www.youtube.com/watch?v=4j71YJ-83M4).
+
+Another  source of information is the training material by the master student Sina Navid on the [EOLab Wiki](https://wiki.eolab.de/doku.php?id=eolab:openhype:start). The information a a bit outdated but still quite useful.
+
+**TASK:**
+Get the OpenHypE system running. It consists of OpenHygrisC data (station locations, masurement data, catalog of substances) stored in PostgreSQL/PostGIS with QGIS utilizing a live link to the geodatabase. Start with my OpenHyPE git repo. Read the code and execute it. We have not talked about the database concept of views. They are stored 
+Produce a mpeg (or similar) video with the QGIS Temporal Controller. In the video above I move the time slider manually forth and back. Automize it and produce a video of the Nitrate concentration from the earliest available Nitrate measurement (early 1960's) up to the latest measurement.
+
+
+
 
 ## 4. FREE EXERCISE (20 Points)
 
