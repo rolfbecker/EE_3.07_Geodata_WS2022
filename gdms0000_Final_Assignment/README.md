@@ -47,7 +47,7 @@ Create a similar plot but for the 12 selected stations including the annual temp
 Consider that the temperatures shown are the negative (blue) and positive (red) deviations from a reference temperature, which is the station's mean annual temperature between 1961 and 1990:
 
 $$
-\Delta t_mathrm{sno} = 
+\Delta T_\mathrm{sno}(t) = T_\mathrm{sno}(t) - \bar{T}_\mathrm{sno}(t) 
 $$
 
 ## 2. Digitization: Burial Mounds in Uedemer Hochwald (20 Points)
