@@ -44,10 +44,10 @@ Use the dataframe with the temperature time series merged columnwise together wi
 Create a similar plot but for the 12 selected stations including the annual temperature data of 2022. Let the time series run from 1950 to 2022. Copy the relevant code from notebook 
 [gdms0155_DWD_NRW_5_Warming_Stripes/gdms155_DWD_NRW_5_Warming_Stripes.ipynb](../gdms0155_DWD_NRW_5_Warming_Stripes/gdms155_DWD_NRW_5_Warming_Stripes.ipynb). 
 
-Consider that the temperatures shown are the negative (blue) and positive (red) deviations from a reference temperature, which is the station's mean annual temperature between 1961 and 1990:
+Consider that for a station with ID $\mathrm{sno}$ the temperatures $\Delta T_\mathrm{sno}(k)$ with year $k$ are the negative (blue) and positive (red) deviations from a reference temperature $\bar{T}_\mathrm{sno}$, which is the station's mean annual $\bar{T}_\mathrm{sno}$ temperature between 1961 and 1990. 
 
 $$
-\Delta T_\mathrm{sno}(t) = T_\mathrm{sno}(t) - \bar{T}_\mathrm{sno}(t) 
+\Delta T_\mathrm{sno}(k) = T_\mathrm{sno}(k) - \bar{T}_\mathrm{sno}
 $$
 
 ## 2. Digitization: Burial Mounds in Uedemer Hochwald (20 Points)
