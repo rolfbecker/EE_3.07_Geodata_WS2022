@@ -25,6 +25,10 @@ We will use several special Python packages to process geodata and to interact w
 * ftplib
 * ipython-sql # SQL magic function
 
+```
+Hello
+```
+
 ## git 
 
 We use git to provide the course material. You should familiarize yourself with git. A short introduction on how to use git is given [here](git.md).
