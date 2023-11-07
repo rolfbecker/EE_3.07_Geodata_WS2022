@@ -24,9 +24,10 @@ We will use several special Python packages to process geodata and to interact w
 * psycopg2
 * ftplib
 * ipython-sql # SQL magic function
+* bs # beautifulsoup web scraping 
 
 ```
-Hello
+conda create -n geo -c conda-forge python=3 pandas geopandas shapely fiona pyproj rasterio psycopg2 ipython-sql bs4 requests
 ```
 
 ## git 
