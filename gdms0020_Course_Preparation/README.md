@@ -14,8 +14,13 @@ Software we will be using during the course:
 
 We will use several special Python packages to process geodata and to interact with geodatabases. The following list is not comprehensive:
 
+* jupyterlab
 * pandas
 * geopandas
+* numpy
+* matplotlib
+* seaborn
+* scipy
 * shapely
 * fiona
 * pyproj
@@ -25,10 +30,11 @@ We will use several special Python packages to process geodata and to interact w
 * ftplib
 * ipython-sql # SQL magic function
 * bs # beautifulsoup web scraping
+* python-wget
 * requests
 
 ```
-conda create -n geo -c conda-forge python=3 pandas geopandas shapely fiona pyproj rasterio psycopg2 ipython-sql bs4 requests
+conda create -n geo -c conda-forge python=3 jupyterlab pandas geopandas numpy matplotlib seaborn scipy shapely fiona pyproj rasterio psycopg2 sqlite3 sqlalchemy ipython-sql bs4 requests
 ```
 
 ## git 
