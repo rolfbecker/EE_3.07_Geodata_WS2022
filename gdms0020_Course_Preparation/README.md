@@ -34,7 +34,9 @@ We will use several special Python packages to process geodata and to interact w
 * requests
 
 ```
-conda create -n geo -c conda-forge python=3 jupyterlab pandas geopandas numpy matplotlib seaborn scipy shapely fiona pyproj rasterio psycopg2 sqlite3 sqlalchemy ipython-sql bs4 requests
+conda create -n geo -c conda-forge python=3.9
+conda activate geo
+conda install -c conda-forge jupyterlab pandas geopandas numpy matplotlib seaborn scipy shapely fiona pyproj rasterio psycopg2 sqlite3 sqlalchemy ipython-sql bs4 requests python-wget
 ```
 
 ## git 
